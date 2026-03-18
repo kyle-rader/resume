@@ -49,10 +49,10 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,noedge]{kyle.png}
 \name{Kyle W.}{Rader}
-\position{Software Engineer{\enskip\cdotp\enskip} Technology Enthusiast}
+\position{Principal Software Engineer{\enskip\cdotp\enskip}Developer Tooling \& AI Systems}
 % \address{}
 
-\email{kyle@kylerader.ninja}
+\email{kylewrader@gmail.com}
 %\homepage{kylerader.ninja}
 \github{/kyle-rader}
 \linkedin{/in/kylewrader}
@@ -85,16 +85,20 @@
 \cvsection{Skills}
 \begin{cvskills}
   \cvskill
-    {Current Languages} % Category
-    {C\# (DotNet Core/5), Ruby, JavaScript, Bash, Python} % Skills
+    {Languages}
+    {Rust, C\# (.NET), Python, TypeScript, Bash}
 
   \cvskill
-    {Web} % Category
-    {Rails, React, Ember} % Skills
+    {AI/Agents}
+    {Claude Code, GitHub Copilot CLI, Cursor}
 
   \cvskill
-    {Tools} % Category
-    {Git, Docker, Heroku, Azure Devops, Azure Pipelines, Github Actions} % Skills
+    {Tooling}
+    {CLI UX design, software distribution, SDK design, TDD, PR automation, linting pipelines}
+
+  \cvskill
+    {Infra}
+    {Git, Docker, Azure DevOps, Azure Pipelines, GitHub Actions, Scalar, Entra ID}
 \end{cvskills}
 
 %-------------------------------------------------------------------------------
@@ -105,111 +109,111 @@
 
   \cventry
     {Microsoft}
-    {Senior Software Engineer}
-    {Redmond, WA}
-    {April 2018 - Present $\cdot$ 2 yr 11 mos }
+    {Principal Software Engineer — Agency CLI (AI Coding Agents)}
+    {Remote}
+    {March 2025 - Present $\cdot$ 1 yr}
     {
       \begin{cvitems}
-        \item Developed our approach to handling line endings without Git auto-crlf in a 180GB repository. Built an Editor Config based line ending linter and integrated it into pull request linting pipelines.
-        \item Standardized my team's approach for writing cross-platform DotNet Core command line applications by developing a library to abstract and handle the configuration for logging, telemetry, and common CLI options. Our team now has a suite of modern CLI tools using this library making it easier to on-board new hires and for devs to move between different tools we own. Along the way I've advocated for TDD and SOLID design principals.
-        \item Built and developed an Azure Pipelines based build policy to prevent unintentional but catastrophic user actions in our anti-pattern Git branching schema. This regularly catches 3-5\% of pull requests in the Office mono repository.
-        \item Helped co-found the Experiences and Devices GLEAM sub-chapter to support and lift up our LGBTQI+ Microsoft community. 
-        \item I've spent two years on the Fix-Hack-Learn v-team organizing and running events for the Office Engineering team three times a year.
-        \item Since December 2020, I've been the interim engineering manager for my team.
+        \item Lead engineer on the \textbf{Agency CLI} — the core of Microsoft's internal AI engineering platform, serving 35,000+ engineers across interactive workflows and CI/CD pipelines, enabling AI coding agents (Claude Code, GitHub Copilot) to operate effectively across massive brownfield codebases.
+        \item Drive CLI UX, software distribution, and agent integration design — pioneering a novel company-wide developer tool distribution model for 35,000+ engineers where no internal solution previously existed.
+        \item Partnered with GitHub and Anthropic to iterate rapidly on Copilot CLI and Claude Code integrations; shipped improvements and channeled direct user feedback enabling agents to reliably operate in Microsoft's largest, most complex repositories.
+        \item Built an MCP proxy layer within Agency CLI that natively handles Microsoft Entra ID authentication, solving MCP auth for internal developers and making all internal MCPs work out-of-the-box in Claude Code, GitHub Copilot, and any MCP-compatible agentic client.
+        \item Defined and drove CLI UX standards across the entire Agency platform: config design, command consistency, usability patterns, and type-system-enforced interface contracts to ensure correctness and coherence at scale.
       \end{cvitems}
     }
+    {Building the AI engineering platform that brings coding agents to Microsoft's internal developer population at enterprise scale.}
+
+  \cventry
+    {Microsoft}
+    {Principal Software Engineer — Azure Hardware \& Infrastructure}
+    {Remote}
+    {June 2024 - March 2025 $\cdot$ 10 mos}
     {
-      I design and build CLI tools and work-flows to make Office developers successful and happy using Git, Scalar, and Azure Devops. 
+      \begin{cvitems}
+        \item Built an async \textbf{Rust SDK} for Azure developers to interface with a custom operating system running on new Microsoft-designed data center chips, enabling hardware-level control from idiomatic Rust.
+      \end{cvitems}
     }
-%%
+    {Embedded systems SDK work for next-generation Azure hardware infrastructure.}
+
+  \cventry
+    {Microsoft}
+    {Principal Software Engineer — Office DevPlat}
+    {Remote}
+    {December 2022 - June 2024 $\cdot$ 1 yr 7 mos}
+    {
+      \begin{cvitems}
+        \item Designed and built \textbf{autolinter} (\texttt{aka.ms/autolinter}) — a generic Rust-based linter toolkit that automatically applies lint fixes to pull requests in Azure DevOps, used across Office engineering.
+        \item Built \textbf{azureauth} (\texttt{aka.ms/azureauth}) — a general-purpose Microsoft Entra ID authentication CLI used by \textbf{10,000+ developers daily}, delivering the most seamless auth experience available internally.
+        \item Created \textbf{lasso} (\texttt{aka.ms/lasso}) — a C\# CLI framework providing logging, UX, and telemetry out of the box; adopted across the team's entire suite of developer tools.
+        \item Championed Rust adoption for developer tooling within Office Engineering: defined best practices, reviewed implementations, and grew the internal Rust practitioner community.
+      \end{cvitems}
+    }
+    {Designed CLI platforms and tooling abstractions empowering developers building foundational Microsoft products (Word, Excel, PowerPoint).}
+
+  \cventry
+    {Microsoft}
+    {Senior Software Engineer — Office DevPlat}
+    {Redmond, WA}
+    {May 2018 - December 2022 $\cdot$ 4 yrs 7 mos}
+    {
+      \begin{cvitems}
+        \item Built and operated engineering systems used by thousands of developers worldwide to build and ship Microsoft Office.
+        \item Developed an EditorConfig-based line-ending linter for the 180GB Office monorepo, catching 3–5\% of PRs with encoding issues before merge.
+        \item Built Azure Pipelines branch protection policies safeguarding Office's branching schema for 5,000+ engineers, preventing catastrophic pushes before merge.
+        \item Co-founded the Experiences \& Devices GLEAM sub-chapter; organized Fix-Hack-Learn engineering events three times per year.
+      \end{cvitems}
+    }
+    {Developer experience engineering for the Office organization's global engineering system.}
   \cventry
     {ActionSprout} % Organization
     {Software Engineer} % Job title
-    {Redmond/Bellingham, WA} % Location
-    {July 2016 - PRESENT $\cdot$ 1 yr 7 mos} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Initiated projects such as Rails micro-service generator, Facebook Graph API RubyGem, usage metrics collection and storage service, content recommendation service, JSON web token authentication standards etc. All of which are used daily.
-        \item Pioneered use of Docker/Docker-Compose standardizing developer environments solving the ``works on my machine" problem.
-        \item Designed a Neo4j Docker orchestration toolkit for Joyent's Triton platform cutting service costs by over 50\%.
-        \item Learned to design micro-services with robust background processing through small, single responsibility, idempotent workers.
-      \end{cvitems}
-    }
-    {
-      Tools and training to help nonprofits exceed their goals on Facebook.
-    }
-
-  \cventry
-    {8las} % Organization
-    {Software Development Life Cycle (SDLC) Manager} % Job title
-    {Bellingham, WA/Shanghai, China} % Location
-    {July 2015 - July 2016 $\cdot$ 1 yr} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Lead and organized 5-6 developers using Git, BitBucket, and agile tracking tools.
-        \item In four months moved from a scattered product idea to a beta launch of an AR runtime and SDK code-named ``Catapult".
-        \item Wrote AR demo applications in Unity/C\# using Catapult. Ran and managed live demos for customers and potential investors.
-        \item Spent three months in Shanghai after an acqui-hire, integrating development teams and products from Bellingham, WA, Hong Kong, Shanghai, and Chengdu, China. Mission was to build an AR platform on web and mobile technologies.
-      \end{cvitems}
-    }
-    {
-      Augmented reality (AR) start up in Bellingham, WA building AR software compatible with the Immy ic60 glasses.
-    }
-
-  \cventry
-    {Womp Mobile} % Organization
-    {Production Engineer} % Job title
     {Bellingham, WA} % Location
-    {Mar 2015 - Aug 2015  $\cdot$ 6 mos} % Date(s)
+    {July 2016 - March 2018 $\cdot$ 1 yr 9 mos} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Helped implement a more streamlined development work-flow and client project tracking system.
+        \item Architected web micro-services, recommendation systems, and business intelligence pipelines for a nonprofit social media platform.
+        \item Pioneered Docker/Docker-Compose standardization to solve developer environment consistency across the team.
+        \item Built a Facebook Graph API RubyGem, Rails micro-service generator, and JWT authentication standards used daily in production.
       \end{cvitems}
     }
-    {
-      Website mobilization by consuming client websites and writing HTML/SASS and Javascript/jQuery to produce a mobile device optimized site.
-    }
+    {Tools and training to help nonprofits exceed their goals on Facebook.}
 
   \cventry
-    {Logos} % Organization
-    {Web Developer} % Job title
-    {Bellingham, WA} % Location
-    {Jun 2013 - Jan 2014  $\cdot$ 8 mos} % Date(s)
+    {8las Inc}
+    {Software Development Life Cycle Manager}
+    {Bellingham, WA}
+    {July 2015 - July 2016 $\cdot$ 1 yr 1 mo}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Projects inlcuded RabbitMQ message replay, MySQL cluster dashboard, server patch dashboard, and version controlled MySQL schema migration dashboard.
+      \begin{cvitems}
+        \item Established agile processes, codebase organization, and version control standards to streamline development velocity for an early-stage AR startup.
+        \item Ran augmented reality demos and pitched the product to investors in Seattle and California.
       \end{cvitems}
     }
-    {
-      Religious study tools, social media, and online publishing. Dev Ops team.
-    }
+    {Augmented reality startup.}
 
   \cventry
-    {Brer Technical} % Organization
-    {Software Engineer} % Job title
-    {Bellingham, WA} % Location
-    {Apr 2012 - Mar 2014  $\cdot$ 2 yrs} % Date(s)
+    {WompMobile}
+    {Production Engineer}
+    {Bellingham, WA}
+    {March 2015 - August 2015 $\cdot$ 6 mos}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Translated business needs of running a piping test procedure and collecting data into a product definition.
-        \item Built Windows desktop application in C\# featuring real-time data collection, visualization, step motor and mega-ohm meter communication.
+      \begin{cvitems}
+        \item Front-end developer converting desktop websites to mobile-optimized experiences using HTML, CSS, and JavaScript.
       \end{cvitems}
     }
-    {Industrial fiberglass piping analysis company.}
+    {Mobile web platform converting desktop sites to mobile.}
 
   \cventry
-    {Western Washington University} % Organization
-    {Graduate \& Undergraduate Teaching Assistant} % Job title
-    {Bellingham, WA} % Location
-    {Sept 2011 - Mar 2015  $\cdot$ 3 yrs 6 mos} % Date(s)
+    {Logos Bible Software}
+    {Web Developer}
+    {Bellingham, WA}
+    {June 2013 - January 2014 $\cdot$ 8 mos}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Wrote grading scripts for building, compiling, and testing Java programs.
-        \item Designed and wrote a new lab sequence in Racket providing students with failing tests for test driven development.
-        \item Frequently lectured in labs, ran extended office hours, and maintained excellent student reviews.
+      \begin{cvitems}
+        \item Developed internal web services tools on the DevOps team; built an open-source generic tile-based web page using Ruby on Rails.
       \end{cvitems}
     }
-    {Taught Intro to Robotics (C), Programming II \& Linear Data Structures (Java), and Formal Language \& Functional Programming (Lisp/Racket)}
+    {Bible study software and publishing company.}
 
 \end{cventries}
 
@@ -220,48 +224,31 @@
 \begin{cventries}
 
   \cventry
-    {Lead Software Engineer/Co-Founder} % Affiliation/role
-    {The Great Puzzle Hunt} % Organization/group
-    {https://greatpuzzlehunt.com} % Location
-    {June 2015 - PRESENT $\cdot$ 2 yrs 5 mos} % Date(s)
+    {Founder \& Lead Engineer}
+    {Kitchen Table Games}
+    {https://kitchentable.games}
+    {2026 - Present}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Client application in ReactJS backed by Meteor and Rails API. Deployed on Digital Ocean behind Nginx for forced TLS.
-        \item Volunteers scan team QR codes to track puzzle start times. Teams solve and enter puzzle answers in the application.
-        \item The web application handles registration/user management, payment web hooks, team formation, ticket redemptions, real-time scoring and game play, and administration tools.
+      \begin{cvitems}
+        \item Building a privacy-first, real-time multiplayer games platform under Automata Software LLC — no ads, no data selling, no third-party tracking.
+        \item Full-stack Rust application with real-time game state sync supporting original real-time multiplayer word and number based puzzle games for 1--20 players per table.
       \end{cvitems}
     }
-    {
-      Annual event drawing around 500 people to Western Washington University to play in a five-puzzle team scavenger hunt around the campus.
-      Teams and volunteers use smartphones to compete on a real-time game platform.
-    }
+    {Real-time multiplayer puzzle games platform built under Automata Software LLC.}
 
   \cventry
-    {Software Engineer/Co-Founder} % Affiliation/role
-    {CodeLily Code School} % Organization/group
-    {Bellingham, WA} % Location
-    {Sept 2014 - Sept 2015 $\cdot$ 1 yr} % Date(s)
+    {Lead Engineer \& Co-Founder}
+    {The Great Puzzle Hunt}
+    {https://greatpuzzlehunt.com}
+    {2015 - 2018}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Won crowd favorite at Bellingham Pitchfest Feb 2015.
-        \item Managed a team of four WWU Computer Science seniors building the CodeLily demo platform (similar to CodePen) with AngularJS and NodeJS/Express.
+      \begin{cvitems}
+        \item Full-stack web platform handling registration, team formation, payment webhooks, real-time scoring, volunteer QR scanning, and administration — serving \textasciitilde500 participants annually.
+        \item Built in React/Node.js, continuously iterated over 10+ years of annual events.
       \end{cvitems}
     }
-    {A Startup Weekend Challenge idea to create a code school with a focus on accessibility for youth and adults switching careers.}
+    {Annual puzzle hunt at Western Washington University drawing \textasciitilde500 participants competing on a real-time game platform.}
 
-  \cventry
-    {Software Engineer} % Affiliation/role
-    {Uzility Agile Kanban System} % Organization/group
-    {Bellingham, WA} % Location
-    {Dec 2013 - Nov 2014 $\cdot$ 11 mos} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Learned agile and scrum methodologies from a certified scrum master.
-        \item Migrated code base from CVS to Git.
-        \item Developed front and back-end application with HTML, LESS, PHP, MySQL, and jQuery.
-      \end{cvitems}
-    }
-    {Uzility was a web based agile software development tool project.}
 \end{cventries}
 
 %-------------------------------------------------------------------------------
@@ -270,28 +257,28 @@
 \cvsection{Education}
 \begin{cventries}
   \cventry
-  {B.S. Computer Science $\cdot$ 2014} % Degree
+  {B.S. Computer Science} % Degree
   {Western Washington University} % Institution
   {Bellingham, WA} % Location
-  {Sept. 2010 - June. 2014} % Date(s)
+  {2010 - 2014} % Date(s)
   {
-  \begin{cvitems} % Description(s) bullet points
-    \item {2014 Computer Science Dept. Citizenship award}
-    \item {2013 Technology Leader of Tomorrow award from Technology Alliance Group NW (TAGNW)}
-    \item {Robotics Club President, IEEE Vice President, ACM Activites Coordinator, ACM Mentor}
+  \begin{cvitems}
+    \item {Computer Science Dept. Citizenship Award \& Scholarship}
+    \item {Technology Leader of Tomorrow — Technology Alliance Group NW (TAGNW)}
+    \item {Robotics Club President, IEEE Vice President, ACM Activities Coordinator \& Mentor}
   \end{cvitems}
   }
   {}
 
   \cventry
-  {M.S. Computer Science Coursework} % Degree
+  {M.S. Computer Science (Coursework completed)} % Degree
   {Western Washington University} % Institution
   {Bellingham, WA} % Location
-  {Sept. 2014 - Expt. Spring. 2018} % Date(s)
+  {2014 - 2018} % Date(s)
   {
-  \begin{cvitems} % Description(s) bullet points
-    \item {In 2018 I had finished all required coursework with a research project remaining but left the program for health reasons.}
-    \item {Implemented application features at ActionSprout to collect a dataset of Facebook page-to-post voting observations.}
+  \begin{cvitems}
+    \item {Completed all required coursework; left program before thesis defense for health reasons.}
+    \item {Founded \textit{Out in Science} — a WWU graduate community for LGBTQ+ students in STEM.}
   \end{cvitems}
   }
   {}
