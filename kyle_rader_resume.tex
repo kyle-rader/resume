@@ -49,7 +49,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,noedge]{kyle.png}
 \name{Kyle W.}{Rader}
-\position{Principal Software Engineer{\enskip\cdotp\enskip}Developer Tooling \& AI Systems}
+\position{Member of Technical Staff{\enskip\cdotp\enskip}Developer Tooling \& AI Systems}
 % \address{}
 
 \email{kylewrader@gmail.com}
@@ -86,19 +86,15 @@
 \begin{cvskills}
   \cvskill
     {Languages}
-    {Rust, C\# (.NET), Python, TypeScript, Bash}
+    {Rust; language selection based on task requirements}
 
   \cvskill
-    {AI/Agents}
-    {Claude Code, GitHub Copilot CLI, Cursor}
+    {AI Engineering}
+    {Prompt design, MCP design, agent loop engineering, agent, skill, and plugin design, command-line tooling}
 
   \cvskill
-    {Tooling}
-    {CLI UX design, software distribution, SDK design, TDD, PR automation, linting pipelines}
-
-  \cvskill
-    {Infra}
-    {Git, Docker, Azure DevOps, Azure Pipelines, GitHub Actions, Scalar, Entra ID}
+    {Developer Tools}
+    {Git, Docker, Azure DevOps, GitHub}
 \end{cvskills}
 
 %-------------------------------------------------------------------------------
@@ -109,19 +105,20 @@
 
   \cventry
     {Microsoft}
-    {Principal Software Engineer — Agency CLI (AI Coding Agents)}
+    {Member of Technical Staff — Agency CLI (AI Coding Agents)}
     {Remote}
-    {March 2025 - Present $\cdot$ 1 yr}
+    {March 2025 - Present $\cdot$ 1 yr 7 mos}
     {
       \begin{cvitems}
-        \item Lead engineer on the \textbf{Agency CLI} — the core of Microsoft's internal AI engineering platform, serving 35,000+ engineers across interactive workflows and CI/CD pipelines, enabling AI coding agents (Claude Code, GitHub Copilot) to operate effectively across massive brownfield codebases.
-        \item Drive CLI UX, software distribution, and agent integration design — pioneering a novel company-wide developer tool distribution model for 35,000+ engineers where no internal solution previously existed.
-        \item Partnered with GitHub and Anthropic to iterate rapidly on Copilot CLI and Claude Code integrations; shipped improvements and channeled direct user feedback enabling agents to reliably operate in Microsoft's largest, most complex repositories.
-        \item Built an MCP proxy layer within Agency CLI that natively handles Microsoft Entra ID authentication, solving MCP auth for internal developers and making all internal MCPs work out-of-the-box in Claude Code, GitHub Copilot, and any MCP-compatible agentic client.
-        \item Defined and drove CLI UX standards across the entire Agency platform: config design, command consistency, usability patterns, and type-system-enforced interface contracts to ensure correctness and coherence at scale.
+        \item Lead engineer on the \textbf{Agency CLI}, part of \textbf{Agency}, Microsoft's third-most-used internal software platform, which runs GitHub Copilot at scale across 100,000+ engineers and CI/CD pipelines.
+        \item Designed token-efficient PR completion tooling that lets agents monitor pull requests for automated feedback, reducing token use by 50--75\% in long-running sessions.
+        \item Developed an \textbf{Agency support skill and tool} that grounds Copilot-assisted support in platform source code and documentation, scaling support for a company-wide tool maintained by a team of fewer than 30.
+        \item Defined CLI standards for configuration, command consistency, and type-safe interfaces; drove CI/CD and distribution for Agency CLI, reaching 100,000+ engineers.
+        \item Actively partner with the GitHub Copilot CLI team, contributing changes directly to Copilot CLI to better support enterprise use cases.
+        \item Built an MCP proxy layer in Agency CLI that handles Microsoft Entra ID authentication, enabling internal MCP servers to work out of the box with Claude Code, GitHub Copilot, and other MCP-compatible clients.
       \end{cvitems}
     }
-    {Building the AI engineering platform that brings coding agents to Microsoft's internal developer population at enterprise scale.}
+    {Building the AI engineering platform that integrates Microsoft's internal systems with GitHub Copilot at enterprise scale.}
 
   \cventry
     {Microsoft}
@@ -142,9 +139,9 @@
     {December 2022 - June 2024 $\cdot$ 1 yr 7 mos}
     {
       \begin{cvitems}
-        \item Designed and built \textbf{autolinter} (\texttt{aka.ms/autolinter}) — a generic Rust-based linter toolkit that automatically applies lint fixes to pull requests in Azure DevOps, used across Office engineering.
-        \item Built \textbf{azureauth} (\texttt{aka.ms/azureauth}) — a general-purpose Microsoft Entra ID authentication CLI used by \textbf{10,000+ developers daily}, delivering the most seamless auth experience available internally.
-        \item Created \textbf{lasso} (\texttt{aka.ms/lasso}) — a C\# CLI framework providing logging, UX, and telemetry out of the box; adopted across the team's entire suite of developer tools.
+        \item Designed and built \textbf{autolinter} — a generic Rust-based linter toolkit that automatically applies lint fixes to pull requests in Azure DevOps, used across Office engineering.
+        \item Built \textbf{azureauth} — a general-purpose Microsoft Entra ID authentication CLI used by \textbf{10,000+ developers daily}, providing a seamless authentication experience for internal developers.
+        \item Created \textbf{lasso} — a C\# CLI framework providing logging, UX, and telemetry out of the box; adopted across the team's entire suite of developer tools.
         \item Championed Rust adoption for developer tooling within Office Engineering: defined best practices, reviewed implementations, and grew the internal Rust practitioner community.
       \end{cvitems}
     }
@@ -171,8 +168,8 @@
     {July 2016 - March 2018 $\cdot$ 1 yr 9 mos} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item Architected web micro-services, recommendation systems, and business intelligence pipelines for a nonprofit social media platform.
-        \item Pioneered Docker/Docker-Compose standardization to solve developer environment consistency across the team.
+        \item Architected web microservices, recommendation systems, and business intelligence pipelines for a nonprofit social media platform.
+        \item Standardized Docker and Docker Compose to improve developer environment consistency across the team.
         \item Built a Facebook Graph API RubyGem, Rails micro-service generator, and JWT authentication standards used daily in production.
       \end{cvitems}
     }
@@ -231,7 +228,7 @@
     {
       \begin{cvitems}
         \item Building a privacy-first, real-time multiplayer games platform under Automata Software LLC — no ads, no data selling, no third-party tracking.
-        \item Full-stack Rust application with real-time game state sync supporting original real-time multiplayer word and number based puzzle games for 1--20 players per table.
+        \item Built a full-stack Rust application with real-time state synchronization for original multiplayer word- and number-based puzzle games, supporting 1--20 players per table.
       \end{cvitems}
     }
     {Real-time multiplayer puzzle games platform built under Automata Software LLC.}
@@ -244,7 +241,7 @@
     {
       \begin{cvitems}
         \item Full-stack web platform handling registration, team formation, payment webhooks, real-time scoring, volunteer QR scanning, and administration — serving \textasciitilde500 participants annually.
-        \item Built in React/Node.js, continuously iterated over 10+ years of annual events.
+        \item Built the initial platform in React/Node.js; it has supported annual events for 10 years.
       \end{cvitems}
     }
     {Annual puzzle hunt at Western Washington University drawing \textasciitilde500 participants competing on a real-time game platform.}
@@ -277,7 +274,7 @@
   {2014 - 2018} % Date(s)
   {
   \begin{cvitems}
-    \item {Completed all required coursework; left program before thesis defense for health reasons.}
+    \item {Completed all required coursework before leaving the program without defending the thesis.}
     \item {Founded \textit{Out in Science} — a WWU graduate community for LGBTQ+ students in STEM.}
   \end{cvitems}
   }
